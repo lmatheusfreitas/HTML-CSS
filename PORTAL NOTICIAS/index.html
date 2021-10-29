@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" src="js/script.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    
+    
+    <title>Portal</title>
+</head>
+<body>
+    <div class="topo">
+        <div class="topoint">
+            <div class="topoleft">
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">Quem somos</a></li>
+                    <li><a href="">Anuncie Aqui</a></li>
+                    <li><a href="">Contato</li>
+                </ul>
+            </div>
+
+            <div class="toporight">
+
+               
+                <a href=""><img src="images/facebook.png" width="26" height="26"
+                /></a>
+                <a href=""><img src="images/googleplus.png" width="26" height="26" 
+                /></a>
+                <a href=""><img src="images/twitter.png" width="26" height="26" 
+                /></a>
+                <a href=""><img src="images/youtube.png" width="26" height="26" 
+                /></a>
+                <a href=""><img src="images/rss.png" width="26" height="26" 
+                /></a>
+
+                <input class="topobusca" type="text" name="busca" placeholder="Busca..." /> 
+                <input type="image"  src="images/lupa.png" width="26" height="26"/>
+
+
+            </div>
+        </div>
+
+    </div>
+
+
+ 
+    <div class="topo2">
+        <div class="topo2int">
+            <div class="logo">
+                <img src="images/logo.png" alt="">
+
+            </div>
+            <div class="banner"></div>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menuint">
+            <img src="./images/menu.png" width="40" height="40" class="menumobile" onclick="toggleMenu()"/>
+            <ul id="menu">
+                <li><a href="./" class="ativo">Home</a></li>
+                <li><a href="./">Brasileirão</a></li>
+                <li>
+                    <a href="./">Times</a>
+                    <img class="arrow" src="images/arrowdown.jpg" border="0" width="10" />
+                    <div class="submenu">
+                        <a href="./"><div class="submenuitem"><img src="images/Corinthians.svg" height="35" width="35"  alt=""></div></a>
+                        <a href="./"><div class="submenuitem"><img src="images/Flamengo-2018.svg" height="35" width="35"  alt=""></div></a>
+                        <a href="./"><div class="submenuitem"><img src="images/bragantino.svg" height="35" width="35"  alt=""></div></a>
+                        <a href="./"><div class="submenuitem"><img src="images/gremio.svg" height="35" width="35"  alt=""></div></a>
+                        <a href="./"><div class="submenuitem"><img src="images/bahia.svg" height="35" width="35"  alt=""></div></a>
+                    </div>
+                </li>
+                <li>
+                    <a href="./">Campeonatos</a>
+                    <img class="arrow"  src="images/arrowdown.jpg" border="0" width="10" />
+                    <div class="submenu">
+                        <a href="./"><div class="submenuitem">Brasileirão</div></a>
+                        <a href="./"><div class="submenuitem">Paulista</div></a>
+                        <a href="./"><div class="submenuitem">Carioca</div></a>
+                    </div>
+                </li>
+                
+                <li>
+                    <a href="./">Internacional</a>
+                    <img class="arrow"  src=" images/arrowdown.jpg" border="0" width="10" />
+                    <div class="submenu">
+                        <a href="./"><div class="submenuitem">Bundesliga</div></a>
+                        <a href="./"><div class="submenuitem">La Liga</div></a>
+                        <a href="./"><div class="submenuitem">Serie A</div></a>
+                        <a href="./"><div class="submenuitem">Concacaf</div></a>
+                    </div>
+                </li>
+                <li><a href="./">OLimpiadas</a></li>
+                <li><a href="./">Videos</a></li>
+                <li><a href="./">Geral</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="ultimasnoticias">
+        <div class="ultimasnoticiasint">
+            <div class="ultnoticiasarea">
+                <div class="ultnoticiastitulo">
+                    ÚLTIMAS NOTÍCIAS
+                </div>
+
+                <div class="ultnoticiasnoticia">
+                Renato Gaúcho entrega o cargo após eliminação, mas diretoria não aceita e mantém treinador no Flamengo
+                </div>
+            </div>  
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="containerint">
+            <div class="leftside">
+                <div class="slideshow" id="slideshow">
+                    <div class="slidebolinhas">
+                        <div class="bolinha" onclick="mudarSlide(0)"></div>
+                        <div class="bolinha" onclick="mudarSlide(1)"></div>
+                        <div class="bolinha" onclick="mudarSlide(2)"></div>
+                        <div class="bolinha" onclick="mudarSlide(3)"></div>
+                    </div>
+                    <div class="slideshowarea">
+                        <a href="http://www.google.com.br/">
+                            <div class="slide" style="background-image:url('/images/01.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Titulo de teste 1</div>
+                                    <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.google.com.br/">
+                            <div class="slide" style="background-image:url('./images/02.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Titulo de teste 1</div>
+                                    <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.google.com.br/">
+                            <div class="slide" style="background-image:url('./images/03.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Titulo de teste 1</div>
+                                    <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="http://www.google.com.br/">
+                            <div class="slide" style="background-image:url('./images/04.jpg')">
+                                <div class="slideinfo">
+                                    <div class="slideinfo_titulo">Titulo de teste 1</div>
+                                    <div class="slideinfo_subtitulo">Subtitulo de teste</div>
+                                </div>
+                            </div>
+                        </a>  
+                    </div>    
+                         
+
+                </div>
+                <div class="widget">
+                    <div class="widget_titulo">
+                        Noticias
+                    </div>
+                    <div class="widget_conteudo">
+                        <div class="noticiaarea1">
+
+
+
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="./images/area1.jpg" alt="" width="80" height="80">
+                                </div>
+                                
+                                <a href="#">
+                                    <div class="noticiatitulo">
+                                        
+                                        Atlético-MG ganha reforço de quarteto para enfrentar o Flamengo
+    
+                                    </div>
+    
+                                    <div class="noticiainfo">
+                                        500 comentários
+                                     </div>
+                                </a>
+                            </div>
+
+                                
+  
+                        </div>
+                    </div>
+                        
+
+                    <div class="noticiaarea2">
+
+
+                        <div class="noticiaitem">
+                            <div class="noticiaimg">
+                                <img src="./images/area2.jpg" alt="" width="80" height="80">
+                            </div>
+                            <a href="#">
+                                <div class="noticiatitulo">
+                                    
+                                    Gabigol, do Flamengo, se manifesta após incidentes no Maracanã: "Jamais aceitarei agressões"
+
+                                </div>
+
+                                <div class="noticiainfo">
+                                    50 comentários
+                                 </div>
+                            </a>
+                        </div>
+
+
+                        <div class="noticiaitem">
+                            <div class="noticiaimg">
+                                <img src="./images/area3.jpg" alt="" width="80" height="80">
+                            </div>
+                            <a href="#">
+                                <div class="noticiatitulo">
+                                    
+                                    Botafogo cria camisa com listras tortas em homenagem a Garrincha
+
+                                </div>
+
+                                <div class="noticiainfo">
+                                    5 comentários
+                                 </div>
+                            </a>
+                        </div>
+
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="./images/area4.jpg" alt="" width="80" height="80">
+                                </div>
+
+                                <a href="#">
+                                    <div class="noticiatitulo">
+                                        
+                                        Campeões do Brasileiro de Aspirantes querem ajudar na luta contra queda: "Podemos mudar a história"
+    
+                                    </div>
+    
+                                    <div class="noticiainfo">
+                                        500 comentários
+                                     </div>
+                                </a>
+        
+                            </div>
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="./images/area5.jpg" alt="" width="80" height="80">
+                                </div>
+
+                                <a href="#">
+                                    <div class="noticiatitulo">
+                                        
+                                        Garoto de Natal faz convite para Bruninho jogar em time de vôlei sub-14
+    
+                                    </div>
+    
+                                    <div class="noticiainfo">
+                                        25 comentários
+                                     </div>
+                                </a>
+        
+                            </div>
+
+
+
+
+        
+
+                    </div>
+                        
+                        <div style="clear:both"></div>
+                    
+                </div>   
+
+
+
+
+                <div class="widget">
+                    <div class="widget_titulo">
+                        Corinthians
+                    </div>
+                    <div class="widget_conteudo">
+                        <div class="noticiaarea1">
+
+
+
+                            <div class="noticiaitem noticiabig">
+                                <div class="noticiaimg">
+                                    <img src="./images/area6.jpg" alt="" width="80" height="80">
+                                </div>
+                                
+                                <a href="#">
+                                    <div class="noticiatitulo">
+                                        
+                                        Corinthians não fará loucuras para renovar com Gabriel Pereira e já cogita afastamento do jogador
+    
+                                    </div>
+    
+                                    <div class="noticiainfo">
+                                        600 comentários
+                                     </div>
+                                </a>
+                            </div>
+
+                                
+  
+                        </div>
+                    </div>
+                        
+
+                    <div class="noticiaarea2">
+
+
+                        <div class="noticiaitem">
+                            <div class="noticiaimg">
+                                <img src="./images/area7.jpg" alt="" width="80" height="80">
+                            </div>
+                            <a href="#">
+                                <div class="noticiatitulo">
+                                    
+                                    Escalação do Corinthians: Sylvinho promove treino tático e ensaia bolas paradas para pegar a Chape
+
+
+                                </div>
+
+                                <div class="noticiainfo">
+                                    40 comentários
+                                 </div>
+                            </a>
+                        </div>
+
+
+                        <div class="noticiaitem">
+                            <div class="noticiaimg">
+                                <img src="./images/area8.jpg" alt="" width="80" height="80">
+                            </div>
+                            <a href="#">
+                                <div class="noticiatitulo">
+                                    
+                                    Devolução de Richard é vista como absurda pelo Corinthians, que avalia uso do volante em 2022
+
+                                </div>
+
+                                <div class="noticiainfo">
+                                    500 comentários
+                                 </div>
+                            </a>
+                        </div>
+
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="./images/area9.jpg" alt="" width="80" height="80">
+                                </div>
+
+                                <a href="#">
+                                    <div class="noticiatitulo">
+                                        
+                                        Corinthians vai testar artilheiro do sub-20 no profissional para decidir se paga R$ 3 milhões por compra
+    
+                                    </div>
+    
+                                    <div class="noticiainfo">
+                                        534 comentários
+                                     </div>
+                                </a>
+        
+                            </div>
+
+                            <div class="noticiaitem">
+                                <div class="noticiaimg">
+                                    <img src="./images/area10.jpg" alt="" width="80" height="80">
+                                </div>
+
+                                <a href="#">
+                                    <div class="noticiatitulo">
+                                        
+                                        Sylvinho tem uma meta ambiciosa para a defesa. Mas a fase não ajuda
+    
+                                    </div>
+    
+                                    <div class="noticiainfo">
+                                        5 comentários
+                                     </div>
+                                </a>
+        
+                            </div>
+
+
+
+
+        
+
+                    </div>
+                        
+                        <div style="clear:both"></div>
+                    
+                </div>   
+
+
+
+
+
+            </div>
+
+            <div class="rightside">
+                <div class="widget">
+                    <div class="widget_titulo">
+                        Social
+                    </div>
+                    <div class="widget_conteudo">
+                        <a href=""><img src="images/facebook.png" width="26" height="26"
+                        /></a>
+                        <a href=""><img src="images/googleplus.png" width="26" height="26" 
+                        /></a>
+                        <a href=""><img src="images/twitter.png" width="26" height="26" 
+                        /></a>
+                        <a href=""><img src="images/youtube.png" width="26" height="26" 
+                        /></a>
+                        <a href=""><img src="images/rss.png" width="26" height="26" 
+                        /></a>
+                    </div>
+                </div>   
+
+                <div class="widget">
+                    <div class="widget_titulo">
+                        Últimas Notícias
+                    </div>
+                    <div class="widget_conteudo">
+                        <div class="noticia_item">
+                           <a href="" >Athletico provoca o técnico Renato Gaúcho após eliminar o Flamengo: “Grama sintética fez a diferença”</a>
+                        </div>
+                        
+                        <div class="noticia_item">
+                            <a href="#">XP buscará investidor no exterior para assumir controle do Botafogo</a>
+                        </div>
+                       
+                        <div class="noticia_item">
+                            <a href="#">Análise: finalista da Copa do Brasil, Cuca garante título de maior técnico da história do Atlético-MG</a> 
+                        </div>
+                      
+                        <div class="noticia_item">
+                            <a href="#">Gabigol é atingido por copo de cerveja na saída de campo após eliminação do Flamengo</a> 
+                        </div>
+                        
+                        <div class="noticia_item">
+                            <a href="#">Perto de acerto com Xavi, Barcelona anuncia técnico do time B como interino no lugar de Koeman</a> 
+
+                        </div>
+                    </div>
+                </div>   
+
+                
+                <div class="widget">
+                    <div class="widget_titulo">
+                        Publicidade
+                    </div>
+                    <div class="widget_conteudo">
+                        <img src="images/banner.png" alt="" width="265" height="265">
+                    </div>
+                </div>   
+
+                <div class="widget">
+                    <div class="widget_titulo">
+                        Facebook
+                    </div>
+                    <div class="widget_conteudo">
+                       <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fsmemfoco&tabs&width=270&height=70&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="340" height="70" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe>
+                    </div>
+                </div>   
+
+
+
+            </div>
+        </div>
+
+    
+    </div>
+
+
+    
+</body>
+</html>
